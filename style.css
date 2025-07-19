@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #3a3a3a;
+  --secondary-color: #787885;
+  --tertiary-color: #6c6c6c;
+}
+
+/* header Style */
+header {
+  max-width: 1470px;
+  margin: 0px auto;
+}
+/* nav style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 85px 120px 0px 120px;
+  margin-bottom: 50px;
+}
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+}
+.nav-menu ul li {
+  list-style: none;
+  font-weight: 500;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* Banner Style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content {
+  max-width: 585px;
+}
+.banner-title {
+  font-size: 3.25rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.banner-disc {
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+.btn {
+  background-color: #e02c6d;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.banner-img {
+  background: url("./images/Circle\ design.svg") no-repeat center center;
+}
+/* Main Section style */
+/* Sponsors Style */
+.sponsors {
+  max-width: 1110px;
+  margin: 0px auto;
+}
+.all-sponsors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+/* Card Section style */
+.card-section {
+  max-width: 1050px;
+  margin: 0px auto;
+}
+.section-title h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+/* Card Style */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+.card {
+  padding: 20px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card-img {
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+.card-title {
+  font-size: 1.75ren;
+  font-weight: 600;
+  color: #18191f;
+  margin-bottom: 6px;
+}
+.card-price {
+  font-size: 24px;
+}
+.card-rating {
+  color: #fb8200;
+}
+.card-disc {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.see-more {
+  text-align: right;
+  position: relative;
+  left: 70px;
+}
+.see-more button {
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+/* Feature Style */
+.feature {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 96px;
+  align-items: center;
+}
+.feature-title {
+  font-size: 2.375rem;
+  font-weight: bold;
+  color: #0a0826;
+}
+.feature-disc {
+  font-weight: bold;
+  line-height: 32px;
+  columns: var(--tertiary-color);
+  margin: 16px 0;
+}
+.feature-btn {
+  background-color: #e02c6d;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* footer style */
+footer {
+  background: #0a0826;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footer p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 3px 0px;
+  color: #d9dbe1;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
