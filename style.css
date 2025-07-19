@@ -70,6 +70,7 @@ header {
 }
 .banner-img {
   background: url("./images/Circle\ design.svg") no-repeat center center;
+  background-size: contain;
 }
 /* Main Section style */
 /* Sponsors Style */
@@ -78,8 +79,9 @@ header {
   margin: 0px auto;
 }
 .all-sponsors {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
   margin-top: 75px;
   margin-bottom: 100px;
 }
@@ -113,14 +115,15 @@ header {
 .card-img img {
   width: 100%;
 }
-.card-title {
-  font-size: 1.75ren;
-  font-weight: 600;
+.card-title h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
   color: #18191f;
   margin-bottom: 6px;
 }
-.card-price {
+.card-price h4 {
   font-size: 24px;
+  font-weight: 400;
 }
 .card-rating {
   color: #fb8200;
@@ -195,4 +198,64 @@ footer {
   gap: 16px;
   margin-top: 15px;
   font-size: 1.5rem;
+}
+/* Responsive Style */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-menu ul {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 0;
+  }
+  .nav-title {
+    font-size: 1rem;
+  }
+  .nav-menu ul {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  /* banner style */
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 1.75rem;
+  }
+  .btn {
+    font-weight: 500;
+  }
+  .all-sponsors {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 25px;
+    margin-bottom: 50px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+  }
+
+  .card-title h3 {
+    font-weight: 600;
+  }
+  .see-more {
+    left: 0;
+  }
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .feature-title {
+    font-size: 1.25rem;
+  }
+  .feature-disc {
+    font-weight: 400;
+    padding: 0 30px;
+  }
+  .feature-btn {
+    margin-bottom: 30px;
+  }
 }
