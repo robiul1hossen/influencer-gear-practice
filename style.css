@@ -110,6 +110,9 @@ header {
   border-radius: 5px;
   margin-bottom: 16px;
 }
+.card-img img {
+  width: 100%;
+}
 .card-title {
   font-size: 1.75ren;
   font-weight: 600;
